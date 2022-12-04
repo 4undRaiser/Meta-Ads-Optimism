@@ -215,8 +215,7 @@ contract MetaAds is ERC721Enumerable, ERC721URIStorage, Ownable{
     adding it to the number of days that is passed into the function.
     */
     function calculateEndDate(uint _days) private view returns(uint) {
-        uint campaignTimeline = uint(_days) days;
-        uint endDate = uint(block.timestamp + campaignTimeline); 
+        uint endDate = uint(block.timestamp + _days); 
         return endDate;
     }
     
