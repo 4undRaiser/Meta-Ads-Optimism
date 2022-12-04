@@ -20,25 +20,23 @@ days.
 has been reached and the space becomes available one again the
 marketplace
 
-# Requirements
+# MetaAds Slides(Presentation)
+[Slide deck]([https://github.com/facebook/create-react-app](https://docs.google.com/presentation/d/1bNEpsIAwUjTGhdi-A5FbyL-8d9t8cfeQ/edit?usp=sharing&ouid=112615134748046055372&rtpof=true&sd=true)).
 
-Vscode or another IDE
-hardhat
-PIP Package Manager
-Py-algorand-sdk
-PyTEAL
-Algorand Purestake node api key
-#
 
-# Getting Started with Create React App
+# Getting Started with MetaAds
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory,first run
 
-### `npm start`
+### `npm install`
+
+Install all required dependencies
+
+### `npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
