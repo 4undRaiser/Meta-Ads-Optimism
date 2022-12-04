@@ -1,6 +1,34 @@
-# Demo link
+# MetaAds Built on Optimism
+Note: this code has not been audited.
 
-https://singular-sable-c77fce.netlify.app
+# Summary
+
+MetaAds provides a decentralized way of running ad campaign in the metaverse. It allows Metaverse Space owners to mint an NFT representing their space while specifying the number of daily visitors and a link pointing to their Space in the metaverse. And Users can pay a specified ammount to run a campaign for number of days selected.
+
+# How it works
+
+*User mints a new ad space on the metaverse as an NFT while
+specifying the required parameters and paying a one time optimism public goods fee for the awesome
+community :)
+
+*Space will be automatically listed in the marketplace.
+
+*Other users can buy these ad spaces for a specified number of
+days.
+
+*Owner of the ad space can end the campaign after the end date
+has been reached and the space becomes available one again the
+marketplace
+
+# Requirements
+
+Vscode or another IDE
+hardhat
+PIP Package Manager
+Py-algorand-sdk
+PyTEAL
+Algorand Purestake node api key
+#
 
 # Getting Started with Create React App
 
