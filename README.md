@@ -22,7 +22,7 @@ marketplace
 
 # MetaAds Slides(Presentation)
 
-[Slide deck]([https://docs.google.com/presentation/d/1bNEpsIAwUjTGhdi-A5FbyL-8d9t8cfeQ/edit?usp=sharing&ouid=112615134748046055372&rtpof=true&sd=true]).
+[Slide deck](https://docs.google.com/presentation/d/1bNEpsIAwUjTGhdi-A5FbyL-8d9t8cfeQ/edit?usp=sharing&ouid=112615134748046055372&rtpof=true&sd=true).
 
 
 # Getting Started with MetaAds
