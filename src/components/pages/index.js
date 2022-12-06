@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState, useCallback } from "react";
 import { toast } from "react-toastify";
+import PropTypes from "prop-types";
 import AddNfts from "./Add";
 import Nft from "./Card";
 import { MDBBtn } from 'mdb-react-ui-kit';
@@ -8,7 +9,7 @@ import Loader from "../ui/Loader";
 import { NotificationSuccess, NotificationError } from "../ui/Notifications";
 import { Row } from "react-bootstrap";
 
-const NftList = ({addNFT, getNfts, getAds, buyySpace, EndAdvert, address, uploadImage}) => {
+const NftList = ({addNFT, getNfts, getAds, buyySpace, EndAdvert, name, address, uploadImage}) => {
 
 
   

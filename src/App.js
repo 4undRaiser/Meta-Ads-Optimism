@@ -97,8 +97,6 @@ function App() {
       const files = makeFileObjects(data, name);
       const file_cid = await upload(files);
 
-      const fee = ethers.utils.parseUnits(String(0.00005), "ether");
-
       const _price = ethers.utils.parseUnits(String(price), "ether");
       const url = `https://${file_cid}.ipfs.w3s.link/${name}.json`;
       console.log(url);
@@ -107,7 +105,7 @@ function App() {
         // mint the NFT and save the IPFS url to the blockchain
          await minterContract.methods
          .mintSpace(url, _price, dailyVisits, description, name)
-         .send({ from: address, value: fee });
+         .send({ from: address });
          
        
      } catch (error) {

@@ -75,12 +75,12 @@ const NftCard = ({ nft, ads, isOwner, BuySpace, endAd }) => {
                                 }}
                             />
                         </FloatingLabel>
-                        <BuyAdSpace save={BuySpace} index={index}  price={totalPrice} days={count} />
                         
-                         </Form>
-                      
-                         
-                         
+                         <>
+                         <BuyAdSpace save={BuySpace} index={index}  price={totalPrice} days={count}/>
+                       </>
+                        
+                        </Form>
 }
         {isOwner === true && available === false && (
           <>
@@ -104,7 +104,7 @@ const NftCard = ({ nft, ads, isOwner, BuySpace, endAd }) => {
             available === false ?(
               <small className="text-muted">Not Available: Campaign Already running</small>
             ): (
-              <small className="text-muted">"Space Available"</small>
+              <small className="text-muted">"Space Available: Campaign Expired"</small>
             )
           } 
         </Card.Footer>
