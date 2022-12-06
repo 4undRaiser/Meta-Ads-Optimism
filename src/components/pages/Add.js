@@ -42,7 +42,7 @@ const AddNfts = ({ save, address, uploadImage }) => {
       style={{ background: 'linear-gradient(to right, rgba(255, 0, 128, 0.5), rgba(99, 50, 206, 0.5))' }}
       
     >
-     <h2 className="fs-5 fw-bold m-2 text-white">{"Mint New Space"}</h2> 
+     <h2 className="fs-5 fw-bold m-2 text-white">{"Mint New Space(0.00005 eth)"}</h2> 
     </MDBBtn>
       {/* Modal */}
       <Modal show={show} onHide={handleClose} centered>

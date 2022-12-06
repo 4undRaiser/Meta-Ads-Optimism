@@ -26,8 +26,8 @@ contract MetaAds is ERC721Enumerable, ERC721URIStorage, Ownable{
     // Global variables
     Counters.Counter private _tokenIdCounter;
     Counters.Counter private allSpaces;
-    uint publicGoodsFee = 0.000005 ether;
-    address payable optimismPGAddress; 
+    uint publicGoodsFee = 0.00005 ether;
+    address payable optimismPGAddress = payable(0x1eF9a73C675466e8f58da6bF4E9ce42DEA82AaE2);
 
 
     /// @dev this struct contains all property of an ad space
@@ -92,7 +92,6 @@ contract MetaAds is ERC721Enumerable, ERC721URIStorage, Ownable{
         _safeMint(msg.sender, tokenId);
         _setTokenURI(tokenId, uri);
         newSpace(_price, tokenId, _dailyVisits, _description, _name); // creating the new space nft
-        setAdvert(_tokenId, "No Ads Yet", "No ads Yet", " ", 0);
         emit Mint(_price, tokenId, uri, _description, _name);
     }
 

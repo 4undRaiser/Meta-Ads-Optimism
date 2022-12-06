@@ -26,19 +26,24 @@ const BuyAdSpace = ({ save, index, text, price, days}) => {
   };
 
   // display the popup modal
-  const handleShow = () => setShow(true);
+  const handleShow = event => {
+    // 👇️ prevent page refresh
+    event.preventDefault();
+    setShow(true);
+    console.log(event);
+  };
 
   return (
     <>
       <MDBBtn
             noRipple
-            className="rounded-pill mt-2 "
+            className="rounded-pill m-2 "
             outline color='dark'
             onClick={handleShow}
             style={{ background: 'linear-gradient(to right, rgba(255, 0, 128, 0.5), rgba(99, 50, 206, 0.5))' }}
 
         >
-         <h2 className="fs-6 fw-bold m-2 text-white">{"Buy Space"}</h2> 
+         <h2 className="fs-6 fw-semi bold m-2 text-white">{"Buy Space"}</h2> 
         </MDBBtn>
 
       {/* Modal */}
@@ -121,16 +126,16 @@ const BuyAdSpace = ({ save, index, text, price, days}) => {
         </Modal.Footer>
       </Modal>
     </>
-  );
-};
+  )
+}
 
 BuyAdSpace.propTypes = {
 
   // props passed into this component
   save: PropTypes.func.isRequired,
-  index: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  days: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+  price: PropTypes.number.isRequired,
+  days: PropTypes.number.isRequired,
 };
 
 export default BuyAdSpace;
